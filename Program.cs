@@ -10,7 +10,7 @@ UseCases.Configure(builder);
 
 builder.Services.AddCors(p => p.AddPolicy("corsapp", builder =>
 {
-    builder.WithOrigins("*").AllowAnyMethod().AllowAnyHeader();
+    builder.WithOrigins("https://*.webforest.eco").AllowAnyMethod().AllowAnyHeader();
 }));
 
 builder.Services.AddControllers();
