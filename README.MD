@@ -16,7 +16,7 @@
 
   <p align="center">Bonsai (Bonsai Tree) - Is an internal microservice that is our payment engine. There are no public endpoints and this microservice serves other microservices. Every donation to Web Forest ecosystem passes through Bonsai.</p>
   
-## Philosophy 🌳
+## Philosophy 🌳 
 Web Forest is a NGO, our goal is straightforward: We want to improve the world using technology and ecology.
 To achieve our objective we develop a gamified platform that allows the users to plant trees in real-world 100% online using their credit card. Got confused? I will explain! 
 When our project V1 gets ready you will be able to create an account in Web Forest platform and create your own custom virtual forest with your name or nickname.
