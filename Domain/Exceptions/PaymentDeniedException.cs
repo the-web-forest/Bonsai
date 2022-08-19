@@ -3,6 +3,6 @@
     [Serializable]
     public class PaymentDeniedException: BaseException
     {
-        protected PaymentDeniedException(): base("002", "Payment Denied") { }
+        public PaymentDeniedException(): base("002", "Payment Denied") { }
     }
 }
