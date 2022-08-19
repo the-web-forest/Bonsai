@@ -11,11 +11,14 @@ namespace Bonsai.Configuration
     {
        public static void Configure(WebApplicationBuilder builder) {
 
-            var VaultUri = Environment.GetEnvironmentVariable("VAULT_URL");
+            var VaultUrl = Environment.GetEnvironmentVariable("VAULT_URL");
 
-            if (VaultUri == null) {
-                throw new ArgumentNullException(nameof(VaultUri), "Arg is Null");
+            if(VaultUrl is null)
+            {
+                throw new ArgumentNullException("VaultUrl", "My error message");
             }
+
+            var VaultUri = new Uri(VaultUrl);
 
             SecretClientOptions options = new()
             {
@@ -27,7 +30,7 @@ namespace Bonsai.Configuration
                  }
             };
 
-            var client = new SecretClient(new Uri(VaultUri), new DefaultAzureCredential(), options);
+            var client = new SecretClient(VaultUri, new DefaultAzureCredential(), options);
 
             var DatabaseConnectionString = client.GetSecret("Trees-Databases-Cosmos-ConnectionString").Value.Value;
             var DatabaseName = client.GetSecret("Trees-Databases-Cosmos-Bonsai-Name").Value.Value;
