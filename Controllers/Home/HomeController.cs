@@ -12,7 +12,7 @@ public class HomeController : Controller
         var Response = new
         {
             Name = "Bonsai API",
-            Version = "1.0.0",
+            Version = "1.0.1",
             Environment = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT")
         };
         return new ObjectResult(Response);
