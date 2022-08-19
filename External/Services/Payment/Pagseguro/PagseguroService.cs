@@ -16,8 +16,6 @@ namespace Bonsai.External.Services.Payment.Pagseguro
 {
 	public class PagseguroService : IPaymentService
 	{
-
-		private readonly IConfiguration _configuration;
 		private readonly string _baseUrl;
 		private readonly string _authorization;
 		private readonly IHttpClientFactory _httpClientFactory;
@@ -27,10 +25,9 @@ namespace Bonsai.External.Services.Payment.Pagseguro
 			IHttpClientFactory httpClientFactory
 			)
 		{
-			_configuration = configuration;
 			_httpClientFactory = httpClientFactory;
-			_baseUrl = _configuration["Payment:BaseUrl"];
-			_authorization = _configuration["Payment:Authorization"];
+			_baseUrl = configuration["Payment:BaseUrl"];
+			_authorization = configuration["Payment:Authorization"];
 		}
 
 		public async Task<PaymentOutput> Pay(NewPaymentUseCaseInput Input, Order Order)
