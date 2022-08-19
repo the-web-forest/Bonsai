@@ -2,10 +2,9 @@
 
 namespace Bonsai.Domain.Errors
 {
-    [Serializable]
-    public class BaseException: Exception
+    public abstract class BaseException: Exception
     {
-        public BaseException(string Code, string Message)
+        protected BaseException(string Code, string Message)
         {
             Data.Add("Code", "BON-"+Code);
             Data.Add("Message", Message);

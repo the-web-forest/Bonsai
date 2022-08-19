@@ -14,7 +14,7 @@ namespace Bonsai.Configuration
             var VaultUri = Environment.GetEnvironmentVariable("VAULT_URL");
 
             if (VaultUri == null) {
-                throw new ArgumentNullException(nameof(VaultUri));
+                throw new ArgumentNullException(nameof(VaultUri), "Arg is Null");
             }
 
             SecretClientOptions options = new()
