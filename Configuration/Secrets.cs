@@ -15,7 +15,7 @@ namespace Bonsai.Configuration
 
             if(VaultUrl is null)
             {
-                throw new ArgumentNullException("VaultUrl", "My error message");
+                throw new ArgumentNullException("VaultUrl");
             }
 
             var VaultUri = new Uri(VaultUrl);
