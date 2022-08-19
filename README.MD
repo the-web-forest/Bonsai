@@ -12,7 +12,7 @@
 [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=the-web-forest_Bonsai&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=the-web-forest_Bonsai)
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=the-web-forest_Bonsai&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=the-web-forest_Bonsai)
 [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=the-web-forest_Bonsai&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=the-web-forest_Bonsai)
-[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=the-web-forest_Bonsai&metric=coverage)](https://sonarcloud.io/summary/new_code?id=the-web-forest_Bonsai)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=the-web-forest_Bonsai&metric=coverage)](https://sonarcloud.io/summary/new_code?id=the-web-forest_Bonsai) 
 
   <p align="center">Bonsai (Bonsai Tree) - Is an internal microservice that is our payment engine. There are no public endpoints and this microservice serves other microservices. Every donation to Web Forest ecosystem passes through Bonsai.</p>
   
