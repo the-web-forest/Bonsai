@@ -7,18 +7,18 @@ namespace Bonsai.Domain.Errors
     public abstract class BaseException: Exception
     {
 
-        public BaseException()
+        protected BaseException()
         {
         }
 
-        public BaseException(string Code, string Message) : base(Message)
+        protected BaseException(string Code, string Message) : base(Message)
         {
             Data.Add("Code", "BON-"+Code);
             Data.Add("Message", Message);
             Data.Add("ShortMessage", Message.Replace(" ", string.Empty));
         }
 
-        public BaseException(string message, Exception innerException) : base(message, innerException)
+        protected BaseException(string message, Exception innerException) : base(message, innerException)
         {
         }
 
