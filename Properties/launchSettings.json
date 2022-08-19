@@ -1,0 +1,32 @@
+{
+  "profiles": {
+    "Bonsai": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "VAULT_URL": "https://webforestkeyvaultdev.vault.azure.net/"
+      },
+      "dotnetRunMessages": true,
+      "applicationUrl": "https://localhost:3002;http://localhost:3001"
+    },
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  },
+  "$schema": "https://json.schemastore.org/launchsettings.json",
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:44362",
+      "sslPort": 44366
+    }
+  }
+}
