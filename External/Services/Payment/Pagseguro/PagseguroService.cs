@@ -72,15 +72,26 @@ namespace Bonsai.External.Services.Payment.Pagseguro
 			return Client;
         }
 
-		private static bool IsPaymentSuccess(NewOrderResponsePayload Response)
+		private static bool IsPaymentSuccess(NewOrderResponsePayload? Response)
         {
+
+			if(Response is null)
+			{
+				return false;
+			}
+
 			var IsSuccessStatus = Response.Status == PagseguroPaymentStatus.PAID.ToString();
 			var IsSuccessMessage = Response.PaymentResponse.Message == PagseguroPaymentMessage.SUCESSO.ToString();
 			return IsSuccessStatus && IsSuccessMessage;
 		}
 
-		private static string GetPaymentStatus(NewOrderResponsePayload Response)
+		private static string GetPaymentStatus(NewOrderResponsePayload? Response)
 		{
+			if(Response is null)
+			{
+				return PagseguroPaymentMessage.ERRO.ToString();
+            }
+
 			return Response.Status;
 		}
 
