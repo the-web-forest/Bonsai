@@ -14,7 +14,7 @@
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=the-web-forest_Forest&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=the-web-forest_Forest)
 [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=the-web-forest_Forest&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=the-web-forest_Forest)
 
-  <p align="center"> **Bonsai (Bonsai Tree)** - Is an internal microservice that is our payment engine. There are no public endpoints and this microservice serves other microservices. Every donation to Web Forest ecosystem passes through Bonsai.</p>
+  <p align="center">Bonsai (Bonsai Tree) - Is an internal microservice that is our payment engine. There are no public endpoints and this microservice serves other microservices. Every donation to Web Forest ecosystem passes through Bonsai.</p>
   
 ## Philosophy 🌳
 Web Forest is a NGO, our goal is straightforward: We want to improve the world using technology and ecology.
